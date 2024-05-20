@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coisas que Amo em Você</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+        text-align: center;
+    }
+    #container {
+        position: relative;
+        width: 500px;
+        margin: 0 auto;
+    }
+    #texto {
+        font-size: 20px; /* Aumenta o tamanho do texto */
+        font-weight: bold; /* Deixa o texto em negrito */
+        position: absolute;
+        top: 520px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #botao {
+        position: absolute;
+        top: 560px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 50px;
+        background-image: url('bot.png');
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+    }
+    #conteudo {
+        margin-top: 120px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div id="container">
+    <img src="img.png" alt="Imagem" width="500" height="500">
+    <div id="texto">Coisas que amo em você</div>
+    <div id="botao" onclick="exibirConteudo()"></div>
+    <div id="conteudo"></div>
+</div>
+
+<script>
+    var conteudo = [
+        "Seu sorriso",
+        "Seu cabelo",
+        "Seu cheiro",
+        "O jeito que você me olha",
+        "Seu abraço",
+        "Seus beijos",
+        "Sua voz",
+        "A maneira como você me faz rir",
+        "Sua compreensão",
+        "Sua paciência",
+        "Seu carinho",
+        "Seu jeito",
+];
+
+    var conteudoIndex = 0;
+
+    function exibirConteudo() {
+        if (conteudoIndex >= conteudo.length) {
+            conteudoIndex = 0;
+        }
+        document.getElementById("conteudo").innerText = conteudo[conteudoIndex];
+        conteudoIndex++;
+    }
+</script>
+
+</body>
+</html>

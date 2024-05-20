@@ -10,34 +10,32 @@
         padding: 0;
         background-color: pink;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Torna a altura do corpo igual à altura da viewport */
     }
     #container {
+        width: 90%; /* Ajusta a largura do container */
+        max-width: 500px; /* Limita a largura máxima do container */
         position: relative;
-        width: 500px;
-        margin: 0 auto;
     }
     #texto {
-        font-size: 20px; /* Aumenta o tamanho do texto */
-        font-weight: bold; /* Deixa o texto em negrito */
-        position: absolute;
-        top: 520px;
-        left: 50%;
-        transform: translateX(-50%);
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px; /* Ajusta o espaço entre a imagem e o texto */
     }
     #botao {
-        position: absolute;
-        top: 560px;
-        left: 50%;
-        transform: translateX(-50%);
         width: 100px;
         height: 50px;
         background-image: url('bot.png');
         background-size: cover;
         border: none;
         cursor: pointer;
+        margin-top: 20px; /* Ajusta o espaço entre o texto e o botão */
     }
     #conteudo {
-        margin-top: 120px;
+        margin-top: 20px; /* Ajusta o espaço entre o botão e o conteúdo */
         font-size: 30px;
         font-weight: bold;
     }
@@ -66,7 +64,7 @@
         "Sua paciência",
         "Seu carinho",
         "Seu jeito",
-];
+    ];
 
     var conteudoIndex = 0;
 
